@@ -36,10 +36,12 @@ image = pyscreenshot.grab(bbox=(x1,y1,x2,y2)) #Primera imagen
 im = image.convert('RGB')
 imagelist = []
 
+#Valores aleatorios intentando esquivar posible software de detección de copia
+
 for i in range(Paginas):
     mouse.move(x_click+random.randrange(-7,13), y_click+random.randrange(-17,18), absolute=True, duration=random.randrange(1,10)/10)
     mouse.click('left')
-    time.sleep(2)
+    time.sleep(2) #Tiempo encontrado de carga de sig. página (variará despendiendo de tu conexión a internet)
 
     #Insertar verificacion
     image = pyscreenshot.grab(bbox=(x1,y1,x2,y2)) 
