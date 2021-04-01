@@ -29,6 +29,7 @@ y1=56
 x2=1270
 y2=680
 
+#Tienes 6 segundos para poner el modo completo de la pantalla de libro a capturar!
 time.sleep(6)
 
 
